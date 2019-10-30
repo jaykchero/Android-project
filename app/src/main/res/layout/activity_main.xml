@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="#1E90FF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="智能水箱管理"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:background="#eee"
+        android:layout_weight="11"
+        android:id="@+id/vp_display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+<RadioGroup
+    android:layout_alignParentBottom="true"
+    android:background="#fff"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:id="@+id/rg"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+
+    <RadioButton
+        android:drawableTop="@drawable/forecast_selector"
+        android:checked="true"
+        android:textColor="@color/navi_selector"
+        android:button="@null"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="水量监控"
+        android:id="@+id/water_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RadioButton
+        android:drawableTop="@drawable/test_selector"
+        android:id="@+id/water_test"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="水量预测"
+        android:textColor="@color/navi_selector"
+         />
+
+    <RadioButton
+        android:drawableTop="@drawable/back_selector"
+
+        android:textColor="@color/navi_selector"
+        android:button="@null"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="指令发送"
+        android:id="@+id/water_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RadioButton
+        android:drawableTop="@drawable/setting_selector"
+        android:textColor="@color/navi_selector"
+        android:button="@null"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="其他设置"
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</RadioGroup>
+</LinearLayout>

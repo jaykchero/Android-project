@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ViewPagerDemo</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="statistics">Dynamic Content</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="january">January</string>
+    <string name="march">March</string>
+    <string name="may">May</string>
+    <string name="february">February</string>
+    <string name="april">April</string>
+    <string name="june">June</string>
+</resources>
